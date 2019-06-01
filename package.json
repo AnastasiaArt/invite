@@ -1,0 +1,46 @@
+{
+  "name": "invite",
+  "version": "1.0.0",
+  "description": "\"# invite\"",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "prod": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --hot --colors --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnastasiaArt/invite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnastasiaArt/invite/issues"
+  },
+  "homepage": "https://github.com/AnastasiaArt/invite#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^2.1.1",
+    "cssnano": "^4.1.10",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.5.1",
+    "webpack-md5-hash": "0.0.6"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
