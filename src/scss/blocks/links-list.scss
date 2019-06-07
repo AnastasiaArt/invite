@@ -1,0 +1,40 @@
+.links-list {
+    background-color: $blue;
+    color: $white;
+}
+
+.links-list__item {
+    padding-top: 4.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+
+    i {
+        display: inline-block;
+        width: 64px;
+        height: 64px;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+}
+
+.links-list__text {
+    flex-grow: 1;
+    margin: 0;
+    width: 90%;
+    margin-left: 3%;
+}
+
+@include media-breakpoint-up(md) {
+    .links-list__item {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .links-list__text {
+        margin: 0;
+        width: 80%;
+        margin-left: 5%;
+    }
+}

@@ -1,0 +1,44 @@
+// Variables
+
+//colors
+$blue: #11749e;
+$blue-light: #2e85aa;
+$white: #ffffff;
+$gray-100: #f5f5f5;
+$gray-200: #f3f3f3;
+
+// Body
+$body-bg: #222222;
+$body-color: $white;
+
+//Border
+$border-radius: 0;
+
+// Links
+$link-color-blue: $blue;
+$link-hover-color-blue: lighter(#11749e, 30%);
+$link-hover-color: darken(#ffffff, 35%);
+$link-hover-color-dark: lighter(#222222, 30%);
+
+$advantage-btn-width: 370px;
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+// Grid containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px
+);
+
+// transition conf
+$duration: 0.3s;
+$transition-style: ease-in-out;

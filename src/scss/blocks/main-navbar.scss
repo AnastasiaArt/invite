@@ -1,0 +1,43 @@
+.main-navbar {
+    padding: 0;
+    font-family: MyriadPro, Arial, sans-serif;
+}
+
+.main-navbar__collapse {
+    justify-content: flex-end;
+}
+
+.main-navbar__item {
+    a {
+        padding: 30px 20px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+
+.main-navbar__list {
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    &--social {
+        flex-direction: row;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .main-navbar__list {
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        &--social {
+            min-width: 150px;
+            max-width: 250px;
+
+            a {
+                padding: 30px 10px;
+            }
+        }
+    }
+}

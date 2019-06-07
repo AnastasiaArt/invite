@@ -1,8 +1,358 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Creatives</title>
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
-  </head>
-  <body>
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+    <link rel="icon"  href="img/favicon.ico">
+    <script src="https://kit.fontawesome.com/28e1e67eb0.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header class="main-header box" v-scroll="handleScroll">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg main-navbar">
+                    <a class="main-navbar__logo" href="#"><img src="images/logo.png" width="79" height="75"></a>
+                    <button class="main-navbar__toggler navbar-toggler btn" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse main-navbar__collapse" id="navbarNav">
+                        <ul class="navbar-nav main-navbar__list">
+                            <li class="main-navbar__item">
+                                <a href="#" class="link link--nav">Home</a>
+                            </li>
+                            <li class="main-navbar__item">
+                                <a href="#" class="link link--nav">Pages</a>
+                            </li>
+                            <li class="main-navbar__item">
+                                <a href="#" class="link link--nav">Features</a>
+                            </li>
+                            <li class="main-navbar__item">
+                                <a href="#" class="link link--nav">Extensions</a>
+                            </li>
+                            <li class="main-navbar__item">
+                                <a href="#" class="link link--nav">Tutorials</a>
+                            </li>
+                            <li class="main-navbar__item">
+                                <a href="#" class="link link--nav">Contact us</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav main-navbar__list main-navbar__list--social">
+                            <li class="main-navbar__item">
+                                <a href="https://www.facebook.com" class="link">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <span class="visually-hidden">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="main-navbar__item">
+                                <a href="https://twitter.com" class="link">
+                                    <i class="fab fa-twitter"></i>
+                                    <span class="visually-hidden">Twitter</span>
+                                </a>
+                            </li>
+                            <li class="main-navbar__item">
+                                <a href="https://skype.com" class="link">
+                                    <i class="fab fa-skype"></i>
+                                    <span class="visually-hidden">Skype</span>
+                                </a>
+                            </li>
+                            <li class="main-navbar__item">
+                                <a href="https://linkedin.com" class="link">
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <span class="visually-hidden">Linkedin</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="intro">
+                <div class="container">
+                    <div class="intro__wrapper">
+                        <transition appear  name="slide-fade" :duration="9000"><h1 class="intro__title">Creatives</h1></transition>
+                        <p class="intro__text"><a href="#" class="link link--blue">Power by PSDfreebies.com</a></p>
+                    </div>
+                    <a class="link box intro__link" @click="scrollMeTo('porto')"></a>
+                </div>
+            </section>
+            <section class="features color color--accent box" ref='porto'>
+                <div class="container">
+                    <h2 class="features__title title title--section">We Are An Awesome Agency</h2>
+                    <ul class="row features__list features__list--padding">
+                        <li class="col-6 col-md-3">
+                            <a href="#" class="features__link link">
+                                <span class="features__icon">
+                                    <i class="far fa-edit"></i>
+                                </span>
+                                <h3 class="features__name title">Feature one</h3>
+                                <p class="features__text">Aenean lacinia bibendum nulla sed consectetur.
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                    Donec id elit non mi porta gravida at eget metus.
+                                </p>
+                            </a>
+                        </li>
+                        <li class="col-6 col-md-3">
+                            <a href="#" class="features__link link">
+                                <span class="features__icon"><i class="far fa-edit"></i></span>
+                                <h3 class="features__name title">Feature one</h3>
+                                <p class="features__text">Aenean lacinia bibendum nulla sed consectetur.
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                    Donec id elit non mi porta gravida at eget metus.
+                                </p>
+                            </a>
+                        </li>
+                        <li class="col-6 col-md-3">
+                            <a href="#" class="features__link link">
+                                <span class="features__icon"><i class="fas fa-search"></i></span>
+                                <h3 class="features__name title">Feature one</h3>
+                                <p class="features__text">Aenean lacinia bibendum nulla sed consectetur.
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                    Donec id elit non mi porta gravida at eget metus.
+                                </p>
+                            </a>
+                        </li>
+                        <li class="col-6 col-md-3">
+                            <a href="#" class="features__link link">
+                                <span class="features__icon"><i class="far fa-comment"></i></span>
+                                <h3 class="features__name title">Feature one</h3>
+                                <p class="features__text">Aenean lacinia bibendum nulla sed consectetur.
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                    Donec id elit non mi porta gravida at eget metus.
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <article class="news">
+                <h2 class="visually-hidden">News</h2>
+                <div class="container">
+                    <div class="row no-gutters mb-5 mb-lg-0">
+                        <div class="col-12 col-lg-6 news__wrapper pr-5">
+                            <p class="news__info"><span class="news__date">Jan 4, 2016</span><span class="news__note">In Culture</span></p>
+                            <h3 class="news__title title"><a class="link">Akita Inu Dog</a></h3>
+                            <p class="news__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="news__text">Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 news__img"><img src="images/news-1.jpg"  width="826" height="474"></div>
+                    </div>
+                    <div class="row no-gutters mb-5 mb-lg-0">
+                        <div class="col-12 col-lg-6 news__img"><img src="images/news-2.jpg" width="826" height="474"></div>
+                        <div class="col-12 col-lg-6 news__wrapper news__wrapper--light pl-4 pr-5">
+                            <p class="news__info"><span class="news__date">Jan 4, 2016</span><span class="news__note">In Culture</span></p>
+                            <h3 class="news__title title"><a class="link link--dark">Akita Inu Dog</a></h3>
+                            <p class="news__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="news__text">Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <section class="features color color--light">
+                <div class="container">
+                    <h2 class="features__title features__title--blog title title--section">Let's blog</h2>
+                    <p class="features__strong">We love clean design and advanced digital solutions.</p>
+                    <ul class="row features__list">
+                        <li class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="features__link color color--light link">
+                                <div class="features__img">
+                                    <img src="images/features-1.jpg" width="270" height="280">
+                                </div>
+                                <h3 class="features__name title title--blue">Fresh Summer Campaign</h3>
+                                <p class="features__text">Aenean lacinia bibendum nulla sed consectetur.
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                    Donec id elit non mi porta gravida at eget metus.
+                                </p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="features__link color color--light link">
+                                <div class="features__img">
+                                    <img src="images/features-2.jpg" width="270" height="280">
+                                </div>
+                                <h3 class="features__name title title--blue">Fresh Summer Campaign</h3>
+                                <p class="features__text">Aenean lacinia bibendum nulla sed consectetur.
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                    Donec id elit non mi porta gravida at eget metus.
+                                </p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="features__link color color--light link">
+                                <div class="features__img">
+                                    <img src="images/features-3.jpg" width="270" height="280">
+                                </div>
+                                <h3 class="features__name title title--blue">Fresh Summer Campaign</h3>
+                                <p class="features__text">Aenean lacinia bibendum nulla sed consectetur.
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                    Donec id elit non mi porta gravida at eget metus.
+                                </p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="features__link color color--light link">
+                                <div class="features__img">
+                                    <img src="images/features-1.jpg" width="270" height="280">
+                                </div>
+                                <h3 class="features__name title title--blue">Fresh Summer Campaign</h3>
+                                <p class="features__text">Aenean lacinia bibendum nulla sed consectetur.
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                    Donec id elit non mi porta gravida at eget metus.
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div class="links-list">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <a class="links-list__item link" href="#">
+                                <i class="far fa-edit"></i>
+                                <p class="links-list__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                    Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Sed posuere consectetur est at lobortis.
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="links-list__item link" href="#">
+                                <i class="far fa-edit"></i>
+                                <p class="links-list__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                    Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Sed posuere consectetur est at lobortis.
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="advantage color">
+                <div class="container">
+                    <div class="row advantage__wrapper">
+                        <div class="col-12 col-md-6">
+                            <h2 class="advantage__title title">Akita Inu Dog</h2>
+                            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                            </p>
+                            <ul class="advantage__list-btn">
+                                <li class="advantage__item-btn"><a href="#" class="link link--btn advantage__btn">Fully Responsive Design</a></li>
+                                <li class="advantage__item-btn"><a href="#" class="link link--btn advantage__btn">High Quality Code</a></li>
+                                <li class="advantage__item-btn"><a href="#" class="link link--btn advantage__btn">Different Headers & Layout</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 advantage__img">
+                            <img src="images/phone.png" width="390" height="651">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="features  color color--light">
+                <div class="container">
+                    <h2 class="features__title features__title--team title title--section">Our Team</h2>
+                    <p class="features__strong">Sales long tail influencer pitch release niche market.</p>
+                    <ul class="row features__list">
+                        <li class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="features__link color color--light link">
+                                <div class="features__img">
+                                    <img src="images/team-john.jpg" width="270" height="414">
+                                </div>
+                                <div class="features__wrapper-text">
+                                    <h3 class="features__name features__name--team title title--blue">John Snow</h3>
+                                    <p class="features__text features__text--team">CEO</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="features__link color color--light link">
+                                <div class="features__img">
+                                    <img src="images/team-lady.jpg" width="270" height="414">
+                                </div>
+                                <div class="features__wrapper-text">
+                                    <h3 class="features__name features__name--team title title--blue">Lady Sansa</h3>
+                                    <p class="features__text features__text--team">Web-design</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="features__link color color--light link">
+                                <div class="features__img">
+                                    <img src="images/team-david.jpg" width="270" height="414">
+                                </div>
+                                <div class="features__wrapper-text">
+                                    <h3 class="features__name features__name--team title title--blue">David Smith</h3>
+                                    <p class="features__text features__text--team">Photographer</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="features__link color color--light link">
+                                <div class="features__img features__img--team">
+                                    <img src="images/team-sansa.jpg" width="270" height="414">
+                                </div>
+                                <div class="features__wrapper-text">
+                                    <h3 class="features__name features__name--team title title--blue">Lady Sansa</h3>
+                                    <p class="features__text features__text--team">Photographer</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="contacts">
+                <div class="container">
+                    <h2 class="contacts__title title title--section">We’d love to hear about your project.</h2>
+                    <form class="contacts__form form" method="post">
+                        <div class="row">
+                            <p class="form__item col-12 col-lg-4">
+                                <label class="visually-hidden" for="id-name">Name</label>
+                                <input class="form__input" type="text" name="name" id="id-name" value="" placeholder="Name *" required>
+                            </p>
+                            <p class="form__item col-12 col-lg-4">
+                                <label class="visually-hidden" for="id-e-mail">E-mail</label>
+                                <input class="form__input" type="email" name="e-mail" id="id-e-mail" value="" placeholder="E-mail *" required>
+                            </p>
+                            <p class="form__item col-12 col-lg-4">
+                                <label class="visually-hidden" for="id-phone">Phone</label>
+                                <input class="form__input" type="tel" name="phone" id="id-phone" value="" placeholder="Phone *" required>
+                            </p>
+                            <p class="form__item col-12">
+                                <label class="visually-hidden" for="id-message">Message</label>
+                                <textarea class="form__input form__input--textarea" name="message" id="id-message" placeholder="Message *"></textarea>
+                            </p>
+                        </div>
+                        <button type="submit" class="form__btn btn link link--btn">Submit</button>
+                    </form>
+                </div>
+            </section>
+            <div class="map">
+                <iframe class="map__yandex" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa62314778d88666b6965195fc751d3b3da6359c04f633d625b15169b2de146fe&amp;source=constructor"></iframe>
+                <img  class="map__image" src="images/map.jpg" alt="Карта проезда">
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-item-baseline">
+                <p class="col footer__copyright">
+                    <a class="footer__link link" href="https://PSDfreebies.com">&copy;2016 PSDfreebies.com &#8226; All Right Reserved</a>
+                </p>
+                <p class=" col footer__designby"> Design by:
+                    <a class="footer__logo link" href="https://PSDfreebies.com">
+                        <img class="footer__img" width="30" height="30" alt="Логотип" src="images/footer-logo.png">PSDfreebies.com
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
-  </body>
+</body>
 </html>

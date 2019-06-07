@@ -1,0 +1,13 @@
+.color {
+    background-color: $body-bg;
+    color: $white;
+
+    &--light {
+        background-color: $white;
+        color: $body-bg;
+    }
+
+    &--accent {
+        background-color: $blue;
+    }
+}

@@ -1,0 +1,87 @@
+@include font-face("GothamBook", "../fonts/gotham-book", 400, normal);
+@include font-face("Gotham", "../fonts/gotham-medium", 500, normal);
+@include font-face("Gotham", "../fonts/gotham-bold", 700, normal);
+@include font-face("MyriadPro", "../fonts/myriadpro-regular", 400, normal);
+@include font-face("Roboto", "../fonts/roboto-regular", 400, normal);
+@include font-face("Roboto", "../fonts/roboto-bold", 700, normal);
+
+html {
+    font-size: 1rem;
+}
+
+body {
+    font-family: GothamBook, Arial, sans-serif;
+    min-width: 375px;
+    width: 100%;
+    font-weight: 400;
+    background-color: $body-bg;
+    color: $body-color;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-size: 15px;
+    line-height: 24px
+}
+
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 1rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 1.2rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 1.4rem;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    html {
+        font-size: 1.6rem;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden,
+input[type="range"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.slide-fade-enter-active {
+    transition: all .8s ease;
+}
+
+.slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-enter, .slide-fade-leave-to {
+    transform: translateX(10px);
+    opacity: 0;
+}
+
+.box {
+    transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
+}

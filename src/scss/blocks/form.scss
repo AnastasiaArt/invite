@@ -1,0 +1,44 @@
+.form {
+    box-sizing: border-box;
+    padding-top: 7px;
+}
+
+.form__input {
+    width: 100%;
+    padding: 17px 20px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    margin-bottom: 27px;
+    letter-spacing: 0.3px;
+
+    &--textarea {
+        margin-bottom: 0;
+        min-height: 212px;
+    }
+}
+
+.form__input[placeholder] {
+    color: $white;
+}
+
+.form__input[type="tel"] {
+    margin-bottom: 19px;
+}
+
+.form__btn {
+    width: 100%;
+    padding: 0.5rem 1.5rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.features__wrapper-text {
+
+}
+
+@include media-breakpoint-up(md) {
+    .form__btn {
+        width: auto;
+    }
+}

@@ -1,9 +1,31 @@
-// Variables
+// Custom
 @import 'variables';
 @import 'mixin';
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap-grid.scss';
+// Required
+@import "~bootstrap/scss/functions";
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/utilities';
+@import '~bootstrap/scss/bootstrap-grid';
+@import '~bootstrap/scss/transitions';
+@import '~bootstrap/scss/buttons';
+@import '~bootstrap/scss/navbar';
 
 // Components
-@import 'blocks/header';
+@import 'base';
+@import 'blocks/link';
+@import 'blocks/color';
+@import 'blocks/title';
+@import 'blocks/main-header';
+@import 'blocks/main-navbar';
+@import 'blocks/intro';
+@import 'blocks/features';
+@import 'blocks/news';
+@import 'blocks/links-list';
+@import 'blocks/advantage';
+@import 'blocks/contacts';
+@import 'blocks/form';
+@import 'blocks/map';
+@import 'blocks/footer';

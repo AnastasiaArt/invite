@@ -1,0 +1,23 @@
+.footer {
+    min-height: 120px;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.26px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    .row {
+        align-items: baseline;
+    }
+}
+
+.footer__copyright {
+    text-align: left;
+}
+
+.footer__designby {
+    text-align: right;
+}

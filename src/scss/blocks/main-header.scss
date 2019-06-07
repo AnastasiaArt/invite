@@ -1,0 +1,21 @@
+.main-header {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    background-color: rgba($body-bg, 0.9);
+    width: 100%;
+    padding-top: 24px;
+}
+
+@include media-breakpoint-up(lg) {
+    .main-header {
+        background-color: transparent;
+        border-bottom: 1px solid rgba($white, 0.38);
+    }
+
+    .scrolled {
+        background-color: $body-bg;
+    }
+
+}
