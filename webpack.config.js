@@ -39,19 +39,35 @@ module.exports = {
                 },'postcss-loader', 'sass-loader']
             },
             {
-                test:/\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/,
+                test: /images[\\\/].+\.(gif|png|jpe?g|svg)$/i,
                 use: [{
                     loader: 'file-loader',
                     options: {
-                        name: '[name].[ext]',
-                        outputPath: 'dist/fonts/'
+                        name: 'images/[name][hash].[ext]'
                     }
-                }]
+                }, {
+                    loader: 'image-webpack-loader',
+                    options: {
+                        mozjpeg: {
+                            progressive: true,
+                            quality: 70
+                        }
+                    }
+                },
+            ],
+        }, {
+            test: /fonts[\\\/].+\.(otf|eot|svg|ttf|woff|woff2)$/i,
+            use: {
+                loader: 'file-loader',
+                options: {
+                    name: 'fonts/[name].[ext]'
+                }
             },
-        ]
-    },
+        }
+    ]
+},
 
-    plugins: [
+plugins: [
         new CleanWebpackPlugin(),
 
         new MiniCssExtractPlugin({
